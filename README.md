@@ -164,13 +164,6 @@ npm run setup    # Creates test database
 npm run benchmark # Runs full comparison
 ```
 
-### Results Summary
-
-- **🏆 5/6 category wins** vs Prisma, Drizzle, TypeORM, MikroORM
-- **+48% faster** simple queries vs average
-- **-49% memory usage** vs Prisma  
-- **+41% faster** transaction performance
-- **16x smaller** bundle size vs Prisma
 
 ## 🤝 Contributing
 
@@ -222,6 +215,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ for the TypeScript community**
 
 *Hyperion ORM - Where performance meets enterprise patterns* 🚀
