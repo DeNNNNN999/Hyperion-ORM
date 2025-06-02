@@ -1,0 +1,36 @@
+{
+  "name": "hyperion-orm-benchmarks",
+  "version": "1.0.0",
+  "description": "Comprehensive benchmarks comparing Hyperion ORM with other ORMs",
+  "type": "module",
+  "scripts": {
+    "benchmark": "node --loader ts-node/esm src/run-benchmarks.ts",
+    "benchmark:simple": "node --loader ts-node/esm src/simple-queries.ts",
+    "benchmark:complex": "node --loader ts-node/esm src/complex-queries.ts",
+    "benchmark:memory": "node --loader ts-node/esm src/memory-usage.ts",
+    "benchmark:transactions": "node --loader ts-node/esm src/transactions.ts",
+    "setup": "node --loader ts-node/esm src/setup-database.ts",
+    "report": "node --loader ts-node/esm src/generate-report.ts"
+  },
+  "dependencies": {
+    "prisma": "^5.7.0",
+    "@prisma/client": "^5.7.0",
+    "drizzle-orm": "^0.29.0",
+    "drizzle-kit": "^0.20.0",
+    "typeorm": "^0.3.17",
+    "@mikro-orm/core": "^5.9.0",
+    "@mikro-orm/postgresql": "^5.9.0",
+    "pg": "^8.11.0",
+    "benchmark": "^2.1.4",
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.3",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/pg": "^8.10.0",
+    "@types/benchmark": "^2.1.5",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.3.0"
+  }
+}
